@@ -2,8 +2,8 @@
 
 include("mail.php");
 
-ini_set ("SMTP","mail.diasoft_itech.com");
-ini_set ("sendmail_from","noreply@diasoft_itech.com");
+ini_set('SMTP','myserver');
+ini_set('smtp_port',25);
 
 $name     = strip_tags(htmlspecialchars($_POST['Name']));
 
